@@ -1,4 +1,5 @@
 package com.has.etec.projectShelock.entities;
+
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -8,6 +9,7 @@ import lombok.Setter;
 @Entity
 @Table(name = "tentativa")
 public class Tentativa {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id_tentativa")
@@ -21,4 +23,7 @@ public class Tentativa {
 
     @Column(name = "pontuacao_final")
     private int pontuacaoFinal;
+
+    @Column(name = "tempo_segundos")
+    private Integer tempoSegundos;
 }

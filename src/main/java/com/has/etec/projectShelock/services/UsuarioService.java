@@ -5,6 +5,7 @@ import com.has.etec.projectShelock.entities.Usuario;
 import com.has.etec.projectShelock.repositories.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import java.util.Optional;
 
@@ -38,4 +39,18 @@ public class UsuarioService {
         return usuarioRepository.save(usuario);
     }
 
+    public Usuario buscarPorUsername(String username) {
+        return usuarioRepository.findByNome(username)
+                .orElseThrow(() ->
+                        new RuntimeException("Usuário não encontrado")
+                );
+    }
+
+    public Usuario buscarPorId(Long id) {
+
+        return usuarioRepository.findById(id)
+                .orElseThrow(() ->
+                        new RuntimeException("Usuário não encontrado")
+                );
+    }
 }

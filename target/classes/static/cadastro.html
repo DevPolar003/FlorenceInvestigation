@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
 
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Investigação Florence — Cadastro</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body class="dark-bg">
   <div class="grain"></div>
   <main class="center-screen">
@@ -16,14 +15,14 @@
       <div class="case-tag">INSTITUTO DE INVESTIGAÇÃO CRIMINAL</div>
       <h1>Cadastro do Investigador</h1>
       <p class="muted">Identifique-se para iniciar a investigação.</p>
-
+        <!--  Forms do usuario -->
       <form id="registerForm" action="/usuario" method="POST">
         <label for="username">Nome de Usuário:</label>
         <input id="username" name="username" type="text" maxlength="30" required autocomplete="off"
           placeholder="Digite seu nome">
         <button class="btn primary" type="submit">CONFIRMAR CADASTRO</button>
       </form>
-
+      <!--  Forms do usuario -->
     </section>
   </main>
   <script src="js/cadastro.js"></script>

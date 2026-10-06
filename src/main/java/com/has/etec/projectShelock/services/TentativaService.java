@@ -20,13 +20,16 @@ public class TentativaService {
     }
 
     public Tentativa salvarTentativa(TentativaRequest request) {
+
         Tentativa tentativa = new Tentativa();
+
         tentativa.setPontuacaoFinal(request.pontuacaoFinal());
         tentativa.setIdUsuario(request.idUsuario());
         tentativa.setIdCaso(request.idCaso());
+        tentativa.setTempoSegundos(request.tempoSegundos());
+
         return tentativaRepository.save(tentativa);
     }
-
     public List<Tentativa> buscarTentativa() {
         return tentativaRepository.findAll();
     }

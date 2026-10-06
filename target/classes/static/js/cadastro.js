@@ -2,6 +2,7 @@ console.log("cadastro.js carregou");
 
 const form = document.querySelector("#registerForm");
 
+// arrow function para postar o usuario
 form.addEventListener("submit", async (event) => {
   event.preventDefault();
 
@@ -17,12 +18,11 @@ form.addEventListener("submit", async (event) => {
     const response = await fetch("/usuario", {
       method: "POST",
 
-
-  headers: {
-    "Content-Type": "application/json"
+      headers: {
+        "Content-Type": "application/json"
   },
 
-  body: JSON.stringify(data)
+        body: JSON.stringify(data)
 });
 
 if (!response.ok) {

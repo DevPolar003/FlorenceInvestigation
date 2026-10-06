@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,8 +28,8 @@
 <main class="case-layout">
 
   <!-- =========================
-       HISTÓRIA DO CASO
-  ========================== -->
+     HISTÓRIA DO CASO
+========================== -->
 
   <section class="case-story">
 
@@ -47,8 +48,8 @@
       </div>
 
       <span>
-        IMAGEM DO CASO
-      </span>
+          IMAGEM DO CASO
+        </span>
 
       <small>
         Adicione uma imagem em /img/fraude/
@@ -100,16 +101,16 @@
 
 
   <!-- =========================
-       PAINEL DE INVESTIGAÇÃO
-  ========================== -->
+     PAINEL DE INVESTIGAÇÃO
+========================== -->
 
   <aside class="investigation-panel">
 
     <div class="panel-heading">
 
-      <span>
-        FICHA DE EVIDÊNCIAS
-      </span>
+        <span>
+          FICHA DE EVIDÊNCIAS
+        </span>
 
       <strong>
         ATIVA
@@ -119,8 +120,8 @@
 
 
     <!-- =========================
-         QUESTÕES / EVIDÊNCIAS
-    ========================== -->
+       QUESTÕES / EVIDÊNCIAS
+  ========================== -->
 
     <div class="formula-box">
 
@@ -142,11 +143,7 @@
 
           Massa total (g)
 
-          <input
-                  id="mTotal"
-                  type="number"
-                  step="any"
-          >
+          <input id="mTotal" type="number" step="any">
 
         </label>
 
@@ -157,11 +154,7 @@
 
           DEG (%)
 
-          <input
-                  id="pDeg"
-                  type="number"
-                  step="any"
-          >
+          <input id="pDeg" type="number" step="any">
 
         </label>
 
@@ -172,11 +165,7 @@
 
           Massa DEG (g)
 
-          <input
-                  id="mDeg"
-                  type="number"
-                  step="any"
-          >
+          <input id="mDeg" type="number" step="any">
 
         </label>
 
@@ -187,11 +176,7 @@
 
           Massa corporal (kg)
 
-          <input
-                  id="mCorpo"
-                  type="number"
-                  step="any"
-          >
+          <input id="mCorpo" type="number" step="any">
 
         </label>
 
@@ -202,11 +187,7 @@
 
           Limite tóxico (g/kg)
 
-          <input
-                  id="dlTox"
-                  type="number"
-                  step="any"
-          >
+          <input id="dlTox" type="number" step="any">
 
         </label>
 
@@ -217,11 +198,7 @@
 
           Dose letal (g)
 
-          <input
-                  id="dLetal"
-                  type="number"
-                  step="any"
-          >
+          <input id="dLetal" type="number" step="any">
 
         </label>
 
@@ -232,11 +209,7 @@
 
           Dose diária (g)
 
-          <input
-                  id="dDiaria"
-                  type="number"
-                  step="any"
-          >
+          <input id="dDiaria" type="number" step="any">
 
         </label>
 
@@ -247,11 +220,7 @@
 
           Tempo até colapso (dias)
 
-          <input
-                  id="tColapso"
-                  type="number"
-                  step="any"
-          >
+          <input id="tColapso" type="number" step="any">
 
         </label>
 
@@ -270,50 +239,34 @@
 
 
     <!-- =========================
-         VALIDAÇÃO
-    ========================== -->
+       VALIDAÇÃO
+  ========================== -->
 
-    <button
-            id="checkPhysics"
-            class="btn primary full"
-    >
+    <button id="checkPhysics" class="btn primary full">
       VALIDAR EVIDÊNCIAS
     </button>
 
 
-    <div
-            id="physicsResult"
-            class="validation"
-    ></div>
+    <div id="physicsResult" class="validation"></div>
 
 
     <!-- =========================
-         SUBMIT DAS EVIDÊNCIAS
-    ========================== -->
+       SUBMIT DAS EVIDÊNCIAS
+  ========================== -->
 
-    <button
-            id="submitEvidence"
-            class="btn secondary full"
-            disabled
-    >
+    <button id="submitEvidence" class="btn secondary full" disabled>
       SUBMIT EVIDÊNCIAS
     </button>
 
 
-    <div
-            id="evidenceResult"
-            class="validation"
-    ></div>
+    <div id="evidenceResult" class="validation"></div>
 
 
     <!-- =========================
-         CONCLUSÃO
-    ========================== -->
+       CONCLUSÃO
+  ========================== -->
 
-    <div
-            id="solutions"
-            class="solutions hidden"
-    >
+    <div id="solutions" class="solutions hidden">
 
       <h3>
         Conclusão da investigação
@@ -327,19 +280,12 @@
       <div id="options"></div>
 
 
-      <button
-              id="submitAnswer"
-              class="btn primary full"
-              disabled
-      >
+      <button id="submitAnswer" class="btn primary full" disabled>
         SUBMIT CONCLUSÃO
       </button>
 
 
-      <div
-              id="finalResult"
-              class="validation"
-      ></div>
+      <div id="finalResult" class="validation"></div>
 
     </div>
 
@@ -351,4 +297,5 @@
 <script src="js/fraude.js"></script>
 
 </body>
+
 </html>

@@ -21,4 +21,16 @@ public class UsuarioController {
 
         return usuarioService.cadastrarNovoUsuario(request);
     }
+
+    @GetMapping("/{username}")
+    public Usuario buscarPorUsername(@PathVariable String username) {
+        return usuarioService.buscarPorUsername(username);
+    }
+
+
+    @GetMapping("/id/{id}")
+    public Usuario buscarPorId(@PathVariable Long id) {
+
+        return usuarioService.buscarPorId(id);
+    }
 }
